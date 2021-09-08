@@ -1,0 +1,159 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+background-image: linear-gradient(to top, rgb(158, 54, 54), #0b0ff1, #d3f511);
+
+}
+
+.contenedor{
+width: 93%;
+margin:0 auto;
+overflow: hidden;
+align-items: center;
+display:grid;
+ 
+}
+
+.post-img-1{
+  background: url(Invictos.jpg)no-repeat;
+width: 100%;
+height: 2000px;
+background-size:100% 100%;
+background-position: center;
+transition: .2s;
+}
+.post-img-2{
+  background: url(invictos2.jpg)no-repeat;
+  width: 100%;
+  height: 2000px;
+  max-height: 2000px;
+  background-size:100% 100%;
+  background-position: center;
+  transition: .2s;
+  
+  }
+  .post-img-3{
+    background: url(invictos3.jpg)no-repeat;
+    width: 100%;
+    height: 2000px;
+    background-size:100% 100%;
+    background-position: center;
+    transition: .2s;
+    }
+    .post-img-4{
+      background: url(invictos4.jpg)no-repeat;
+      width: 100%;
+      height: 2000px;
+      background-size:100% 100%;
+      background-position: center;
+      transition: .2s;
+      }
+
+      .post-img-5{
+        background: url(invictos5.jpg)no-repeat;
+      width: 100%;
+      height: 2000px;
+      background-size: 100% 100%;
+      background-position: center;
+      transition: .2s;
+      }
+      .post-img-6{
+        background: url(invictos6.jpg)no-repeat;
+        width: 100%;
+        height: 2000px;
+        background-size:100% 100%;
+        background-position: center;
+        transition: .2s;
+        }
+        .post-img-7{
+          background: url(invictos7.jpg)no-repeat;
+          width: 100%;
+          height: 2000px;
+          background-size:100% 100%;
+          background-position: center;
+          transition: .2s;
+          }
+          .post-img-8{
+            background: url(invictos8.jpg)no-repeat;
+            width: 100%;
+            height: 2000px;
+            background-size:100% 100%;
+            background-position: center;
+            transition: .2s;
+            }
+        
+          .post-img-9{
+            background: url(invictos9.jpg)no-repeat;
+            width: 100%;
+            height: 2000px;
+            background-size:100% 100%;
+            background-position: center;
+            transition: .2s;
+            }
+        
+      .table{
+width: 100%;
+border-collapse: collapse;
+table-layout:fixed;
+margin: 0;
+padding: 0;
+      } 
+
+      @media screen and (max-width: 4000px){
+
+ 
+          .table{
+          border: 0px;
+          width: 90%;
+          margin: 0 auto;
+          }
+         }
+       
+
+@media screen and (max-width: 2070px){
+
+ 
+  .table tr td{
+
+    display: block;
+    }
+    .table{
+    border: 0px;
+    width: 78%;
+    margin: 0 auto;
+    }
+   }
+ 
+  @media screen and (max-width: 1832px){
+ 
+    .table tr td{
+
+      display: block;
+      }
+      .table{
+      border: 0px;
+      width: 89%;
+      margin: 0 auto;
+      }
+     }
+  
+  
+  @media screen and (max-width: 1500px){
+ 
+    .table tr td{
+
+      display: block;
+      }
+      .table{
+      border: 0px;
+      width: 100%;
+      margin: 0 auto;
+      }
+     }
+
+  
