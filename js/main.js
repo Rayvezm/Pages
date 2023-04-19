@@ -1,19 +1,15 @@
-const iconEye = document.querySelector(".icon-eye")
+let scrollpos = window.scrollY
+const header = document.querySelector(".navbar")
+const header_height = header.offsetHeight
 
+const add_class_on_scroll = () => header.classList.add("scrolled")
+const remove_class_on_scroll = () => header.classList.remove("scrolled")
 
+window.addEventListener('scroll', function () {
+    scrollpos = window.scrollY;
 
-iconEye.addEventListener("click", function (){
-const icon = this.querySelector("i");
+    if (scrollpos >= header_height) { add_class_on_scroll() }
+    else { remove_class_on_scroll() }
 
-
-if(this.nextElementSibling.type === "password"){
-this.nextElementSibling.type = "txt";
-icon.classList.remove("fa-eye-slash");
-icon.classList.add("fa-eye");
-}else{
-    this.nextElementSibling.type = "password";  
-    icon.classList.add("fa-eye-slash");
-icon.classList.remove("fa-eye");
-}
-});
-
+    console.log(scrollpos)
+})
