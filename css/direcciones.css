@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  zoom: 98%;
 }
 :root {
   --color-yellow: #f1c40f;
@@ -26,7 +27,11 @@
   padding: 0.6rem 1.2rem;
   display: flex;
   align-items: center;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  height: 72px;
+  z-index: 100000;
+  margin-top: -48px;
 }
 .encabezado nav {
   display: flex;
@@ -43,17 +48,6 @@
 
 li {
   color: white;
-}
-
-.dos:focus {
-  cursor: pointer;
-  background: #a50505;
-  transition: 0.2s;
-}
-.dos:hover {
-  cursor: pointer;
-  background: #a50505;
-  transition: 0.2s;
 }
 
 .encabezado nav ul li ul {
@@ -79,6 +73,7 @@ li {
   display: block;
 }
 .nav-main__btn-collapse-icon {
+  position: absolute;
   --size: 44px;
   width: var(--size);
   height: var(--size);
@@ -139,7 +134,7 @@ li {
   color: #fff;
   box-shadow: var(--box-shadow);
   z-index: 1;
-  margin-left: -1rem;
+  margin-left: 1rem;
   transform: scaleX(0);
   transition: transform var(--time-animation);
   transform-origin: left;
@@ -159,7 +154,7 @@ li {
   display: flex;
   flex-direction: column;
   width: var(--size-btn-collapse);
-  height: calc(109vh - 65px);
+  height: calc(114vh - 65px);
   background-color: var(--color-red);
   padding: 2rem;
   font-weight: 300;
@@ -206,9 +201,10 @@ a {
   font-family: "Times New Roman", Times, serif;
 }
 body {
-  background-repeat: no-repeat;
-  background-size: 110% 100%;
   font-family: sans-serif;
+  background: url(../img/F.JPG) repeat;
+  background-size: 105vw 105vh;
+  margin-top: 45px;
 }
 
 .post-list {
@@ -239,7 +235,7 @@ body {
   box-shadow: 0 1px 6px 1px rgba(0 0 0 / 0.1);
   overflow: hidden;
   transition: 0.2s;
-  background-image: linear-gradient(to top, rgb(158, 54, 54), #0b0ff1, #d3f511);
+  background: linear-gradient(to top, rgb(158, 54, 54), #0b0ff1, #d3f511);
   padding: 8px;
   height: 800px;
 }
@@ -322,17 +318,13 @@ legend {
   color: rgb(255, 255, 255);
   font-size: 22px;
 }
-
-.visible nav ul li {
-  display: inline-block;
-  position: relative;
+label {
+  padding-left: 6px;
 }
-.visible nav .up {
-  margin: 0 auto;
-  margin-right: 0px;
-  justify-content: center;
+.visible {
+  display: flex;
+  flex-grow: 1;
 }
-
 .visible nav {
   z-index: 1000;
   max-width: 1000px;
@@ -341,17 +333,13 @@ legend {
 }
 
 .visible nav ul {
-  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+  display: inline-flex;
 }
 
-.menu_bars {
-  display: none;
-}
 .visible li a {
-  display: block;
   padding: 18px 20px;
 }
 .dos {
@@ -362,19 +350,21 @@ legend {
   margin-left: 0;
   border-radius: 10%;
 }
-.visible {
-  height: 133px;
-  width: 75%;
+.dos:hover {
+  cursor: pointer;
+  background: #a50505;
+  transition: 0.2s;
 }
-.visible nav ul li ul li{
-display: none;
-}
-.visible nav ul li:hover>ul li{
-  display: block;
-}
-.visible nav ul li:focus>ul li{
-  display: block;
-}
-.visible nav ul li ul li ul{
+.visible nav ul li ul {
   display: none;
-  }
+}
+
+.visible nav ul li ul li ul {
+  display: none;
+}
+.visible nav ul li:hover > ul li {
+  display: block;
+  position: absolute;
+  z-index: 1000000;
+  margin-top: 100px;
+}

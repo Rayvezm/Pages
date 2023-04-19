@@ -352,11 +352,10 @@ header {
     width: 100%;
   }
 }
-@media screen and (max-width: 760px) {
+
+@media screen and (max-width: 599px) {
   body {
     background-size: 100% 100%;
-
-    width: auto;
   }
   .table tr td {
     display: block;

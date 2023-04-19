@@ -12,17 +12,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
     crossorigin="anonymous">
-  <link rel="stylesheet" href="css/coordinaciones.css">
+  <link rel="stylesheet" href="css/direcciones.css">
   <link rel="icon" type="image-x-icon" href="img/FUNDEY.png">
   <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <script src="direcciones.js"></script>
+  <script src="js/direcciones.js"></script>
 </head>
 
 <body background="img/F.JPG">
   <div class="contenedor">
     <div class="main">
-      <nav class="nav-main" style="
-    height: 64.2px;">
+      <nav class="nav-main">
         <!-- BTN -->
         <input type="checkbox" class="nav-main__btn-collapse" id="nav-main__checkbox">
         <label for="nav-main__checkbox" class="nav-main__btn-collapse-icon">
@@ -49,11 +48,7 @@
           </a>
         </div>
         <!-- Menu -->
-        <div class="nav-main__menu" style="
-        padding-left: 22px;
-        padding-right: 22px;
-        bottom: -655.396;
-        "><a href="index.html" class="nav-main__link-item">
+        <div class="nav-main__menu"><a href="index.html" class="nav-main__link-item">
             <i class="far fa-newspaper"></i>
             Noticias de FUNDEY
           </a>
@@ -78,17 +73,15 @@
         </div>
         <header class="visible">
           <nav>
-            <div class="menu_bars">
-              <a href="#" class="bt-menu"><i class="fas fa-bars"></i></a>
-            </div>
-            <ul class="upS">
-              <li style="height: 100%;">
+            <ul>
+              <li>
                 <br>
-                <a href="#" class="dos" id="tres">Presidencia</a>
+                <a href="#" class="dos" id="tres"><i class="fas fa-flag"></i><label for="tres">Presidencia</label></a>
               </li>
-              <li style="height: 100%;">
+              <li>
                 <br>
-                <a href="#" class="dos">Alto Rendimiento</a>
+                <a href="#" class="dos" id="tres"><i class="fas fa-flag"></i><label>Alto
+                    Rendimiento</label></a>
                 <ul>
                   <li><a href="#" class="dos">Coordinaciones</a>
                     <ul>
@@ -114,7 +107,8 @@
             </ul>
             <li>
               <br>
-              <a href="#" class="dos">Intalaciones Deportivas</a>
+              <a href="#" class="dos" id="tres"><i class="fas fa-flag"></i><label>Instalaciones
+                  Deportivas</a>
               <ul>
                 <li><a href="#" class="dos">Coordinaciones</a>
                   <ul>
@@ -135,7 +129,8 @@
             </ul>
             <li>
               <br>
-              <a href="#" class="dos">Deporte para Todos</a>
+              <a href="#" class="dos" id="tres"><i class="fas fa-flag"></i><label>Deporte para
+                  Todos</label></a>
               <ul>
                 <li><a href="#" class="dos">Coordinaciones</a>
                   <ul>
@@ -178,19 +173,22 @@
               <div class="post-img-1"></div>
             </div>
             <h2 align="justify">Lorenz Durán</h2>
-            <font align="justify">
-              <legend>Presidenta del Instituto Autónomo del Deporte del Estado Yaracuy (FUNDEY)<br>
+
+            <legend>
+              <font align="justify">
+                Presidenta del Instituto Autónomo del Deporte del Estado Yaracuy (FUNDEY)<br>
                 desde el 13/11/2017, entrenadora de gimnasia aeróbica. Desde su ingreso se<br>
                 ha logrado la mejoras en muchas areas del instituto, asi como también la<br>
                 implementación de una coordinación dedicada al Servicio Social al Atleta.
-              </legend>
-            </font>
+              </font>
+            </legend>
+
           </article>
         </div>
       </section>
     </div>
   </div>
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
